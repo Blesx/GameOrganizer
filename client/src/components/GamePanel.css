@@ -1,0 +1,20 @@
+.panel {
+    border-style: solid;
+    border-width: 1px;
+    margin: 0.5%;
+    width: 50%;
+
+}
+
+.game-info {
+    display: inline-block;
+    margin-left: 1%;
+
+}
+
+.add-button {
+    float: right;
+    margin-top: 16px;
+    margin-right: 1%;
+
+}

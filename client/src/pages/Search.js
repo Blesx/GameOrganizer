@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import GamePanel from '../components/GamePanel';
 
 function Search() {
   const [ result, setResult ] = useState(null);
@@ -27,7 +28,7 @@ function Search() {
   return (
     <div>
       {result ? 
-        result.map(game => <p key = {game.slug}>{game.name}</p>) : 
+        result.map(game => <GamePanel game = {game} />) : 
         <p>Loading...</p>}
     </div>
   );
